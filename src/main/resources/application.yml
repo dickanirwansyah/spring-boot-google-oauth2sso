@@ -1,0 +1,16 @@
+#konfigurasi oauth dengan google
+security:
+  oauth2:
+    client:
+      clientId: 232830647877-86a70jo4pngod4m7634ov9abf44254hk
+      clientSecret: zzFv-ke3VT-50VgTBBUetKnr
+      accessTokenUri: https://www.googleapis.com/oauth2/v4/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
+      clientAuthenticationScheme: form
+      scope:
+        - openid
+        - email
+        - profile
+    resource:
+      userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
+      preferTokenInfo: true
